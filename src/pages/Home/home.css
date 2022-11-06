@@ -1,0 +1,26 @@
+.containerInMain {
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: var(--spacing);
+  background-color: var(--containers);
+  width: 25vw;
+}
+
+.search > form .btnSearch, .btn {
+  background-color: var(--mainColor);
+  color: var(--linkColor);
+  border-radius:  var(--spacing);
+  padding:  var(--spacing);
+  font-size: 1.2em;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+.search form > .btnSearch:hover, .btn:hover{ background-color: var(--mainColorHover); }
+
+@media(max-width: 600px) {
+  main {
+    flex-direction: column !important;
+    min-height: 90vh;
+  }
+}

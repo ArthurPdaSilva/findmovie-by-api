@@ -1,0 +1,29 @@
+.result { height: 70vh; }
+
+.movie {
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.movie h1 { text-align: center; }
+
+.imgBack {
+  border-radius: var(--spacing);
+  max-width: 90%;
+  max-height: 50vh;
+}
+
+.btn { justify-content: center; }
+
+@media(max-width: 600px) {
+  .result {
+    min-width: 80vw;
+    height: 45vh;
+  }
+
+  .imgBack {
+    border-radius: 5%;
+    max-height: 25vh;
+  }
+}

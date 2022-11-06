@@ -1,0 +1,27 @@
+.elementSynopsis {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing);
+}
+
+.elementSynopsis > p {
+  width: 60%;
+  text-align: justify;
+}
+
+.elementSynopsis p.group > span {
+  font-weight: bold;
+}
+
+.elementSynopsis .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-bottom: .5em;
+}
+
+.buttons button, .buttons a { width: 15vw; }
+
+@media(max-width: 600px) {
+  .buttons > a, .buttons button { width: 50%; }
+}

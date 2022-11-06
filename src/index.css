@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #ca6d16;
+  --mainColorHover: #ca6200;
+  --linkColor: #ffffff;
+  --hoverBtn: #ffffff9d;
+  --containers: #cececec0;
+  --btnSave: #20BF55;
+  --btnSaveHover: #188d3f;
+  --btnTrailerOrDelete: #DA3E52;
+  --btnTrailerOrDeleteHover: #b32336;
+  --spacing: 10px;
+  --btnRadius: 5px;
+}
+
+body{
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a, button { cursor: pointer; font-weight: bold; }
+
+button, input { border: none; }
+
+button { text-align: center; }
+
+body, #root, html { height: 100%; }
+
+.container, .movie, .btn, .elementSynopsis, .containerInMain, .favoritesContainer, .favoritesContainer ul > li, .errorContainer, header { display: flex; align-items: center; }
+
+
+.container, .movie, .containerInMain, header {
+  padding: var(--spacing);
+  gap: var(--spacing);
+}
+
+.container {
+  flex-direction: row;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.buttonSaveOrDetail { background-color: var(--btnSave); }
+
+.buttonSaveOrDetail:hover { background-color: var(--btnSaveHover); }
+
+.buttonDeleteOrTrailer { background-color: var(--btnTrailerOrDelete); }
+
+.buttonDeleteOrTrailer:hover { background-color: var(--btnTrailerOrDeleteHover); }
+
+.buttonPattern > button, .buttonPattern > a {
+  text-align: center;
+  color: var(--linkColor);
+  font-size: 1.2em;
+  padding: var(--spacing);
+  border-radius: var(--btnRadius);
+  transition: background-color .2s ease;
+}

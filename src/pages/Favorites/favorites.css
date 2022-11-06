@@ -1,0 +1,28 @@
+.favoritesContainer {
+  flex-direction: column;
+  min-height: 90vh;
+  padding: var(--spacing);
+}
+
+.favoritesContainer h2 { text-align: center; }
+
+.favoritesContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  width: 50vw;
+}
+
+.favoritesContainer ul > li {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btnGroup {
+  display: flex;
+  gap: var(--spacing);
+}
+
+.favoritesContainer ul li > span { font-size: 1.5em; }
+
+@media(max-width: 600px) { .favoritesContainer ul { width: 100vw } }

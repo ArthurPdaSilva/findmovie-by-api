@@ -1,0 +1,28 @@
+.search{ height: 50vh; }
+
+.search > p{
+  text-align: justify;
+  width: 70%;
+}
+
+.search h1 { text-align: center; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.search > form input{
+    border-radius: var(--spacing);
+    padding: var(--spacing);
+    font-size: 1.2em;
+    width: 100%;
+}
+
+@media(max-width: 600px){
+  .search{
+    min-width: 80vw;
+    height: 45vh;
+  }
+}

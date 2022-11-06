@@ -1,0 +1,14 @@
+header {
+  background-color: var(--mainColor);
+  justify-content: flex-start;
+}
+
+header > a{
+  color: var(--linkColor);
+  padding: var(--spacing);
+  display: block;
+  font-size: 1.4em;
+  transition: color .2s ease-in-out;
+}
+
+header > a:hover { color: var(--hoverBtn); }
