@@ -23,5 +23,5 @@
 .buttons button, .buttons a { width: 15vw; }
 
 @media(max-width: 600px) {
-  .buttons > a, .buttons button { width: 60%; }
+  .buttons button, .buttons a { width: 40vw; }
 }
