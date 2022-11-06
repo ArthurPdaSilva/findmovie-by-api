@@ -1,6 +1,6 @@
 header {
   background-color: var(--mainColor);
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 header > a{
