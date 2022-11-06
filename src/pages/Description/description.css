@@ -9,7 +9,7 @@
   text-align: justify;
 }
 
-.elementSynopsis p.group > span {
+.elementSynopsis p, .group span {
   font-weight: bold;
 }
 

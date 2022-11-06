@@ -53,7 +53,7 @@ export default function Description() {
     <div className="container">
       {movie.movieList.map((item) => {
         return (
-          <div key={item.imdbID} className="elementSynopsis">
+          <div key={item.Title} className="elementSynopsis">
             <h1>{item.Title}</h1>
             <img
               src={item.Poster !== 'N/A' ? item.Poster : 'assets/not-found.png'}
@@ -61,18 +61,24 @@ export default function Description() {
             />
             <h2>Plot</h2>
             <p>{item.Plot}</p>
-            <p className="group">
-              <span>Actors: </span>
-              {item.Actors}
-              <span>Year: </span>
-              {item.Year ? item.Year : 'Not informed'}
-              <br />
-              <span>Runtime: </span>
-              {item.Runtime ? item.Runtime : 'Not informed'}
-              <br />
-              <span>Genre: </span>
-              {item.Genre ? item.Genre : 'Not informed'}
-            </p>
+            <ul className="group" key={item.Title}>
+              <li>
+                <span>Actors: </span>
+                {item.Actors}
+              </li>
+              <li>
+                <span>Year: </span>
+                {item.Year ? item.Year : 'Not informed'}
+              </li>
+              <li>
+                <span>Runtime: </span>
+                {item.Runtime ? item.Runtime : 'Not informed'}
+              </li>
+              <li>
+                <span>Genre: </span>
+                {item.Genre ? item.Genre : 'Not informed'}
+              </li>
+            </ul>
             <div className="buttons buttonPattern">
               <button onClick={saveMovie} className="buttonSaveOrDetail">
                 Save
